@@ -1,18 +1,36 @@
+// import 'package:flutter/material.dart';
+//
+// /// The [Favorites] class holds a list of favorite items saved by the user.
+// class Favorites extends ChangeNotifier {
+//   final List<int> _favoriteItems = [];
+//
+//   List<int> get items => _favoriteItems;
+//
+//   void add(int itemNo) {
+//     _favoriteItems.add(itemNo);
+//     notifyListeners();
+//   }
+//
+//   void remove(int itemNo) {
+//     _favoriteItems.remove(itemNo);
+//     notifyListeners();
+//   }
+// }
+
 import 'package:flutter/material.dart';
 
-/// The [Favorites] class holds a list of favorite items saved by the user.
 class Favorites extends ChangeNotifier {
-  final List<int> _favoriteItems = [];
+  final List<int> _favoritesItems = [];
 
-  List<int> get items => _favoriteItems;
+  List<int> get items => _favoritesItems;
 
   void add(int itemNo) {
-    _favoriteItems.add(itemNo);
+    _favoritesItems.add(itemNo);
     notifyListeners();
   }
 
   void remove(int itemNo) {
-    _favoriteItems.remove(itemNo);
+    _favoritesItems.remove(itemNo);
     notifyListeners();
   }
 }

@@ -26,8 +26,8 @@ class FavoriteItemTile extends StatelessWidget {
   final int itemNo;
 
   const FavoriteItemTile(
-      this.itemNo,
-      );
+    this.itemNo,
+  );
 
   @override
   Widget build(BuildContext context) {
